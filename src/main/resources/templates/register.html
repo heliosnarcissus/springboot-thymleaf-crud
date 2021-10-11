@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+REGISTER NEW USER HERE
+		<div align="center">	
+			<h1>SIGNUP NEW USER</h1>
+			<br/>
+			<form action="#" th:action="@{/save}" th:object="${user}" method="post">
+				<table border="0" cellpadding="10">
+					<tr>
+						<td>Name:</td>
+						<td><input type="text" th:field="*{username}" /></td>
+					</tr>
+					<tr>
+						<td>Password:</td>
+						<td><input type="text" th:field="*{password}" /></td>
+					</tr>				
+					<tr>
+						<td>Role:</td>
+						<td><input type="text" th:field="*{role}" /></td>
+					</tr>				
+					<tr>
+						<td>Enabled:</td>
+						<td><input type="text" th:field="*{enabled}" /></td>
+					</tr>				
+					<tr>
+						<td colspan="2"><button type="submit">Save</button></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+</body>
+</html>

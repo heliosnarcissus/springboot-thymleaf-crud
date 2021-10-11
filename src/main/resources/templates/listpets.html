@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>LIST OF PETS</title>
+</head>
+<body>
+
+	<table id="vets" class="table table-striped">
+		  <thead>
+		  <tr>
+		    <th>List of Pets</th>
+		  </tr>
+		  </thead>
+		  <tbody>
+		  <tr th:each="pet : ${listPets}">
+		    <td th:text="${pet.petname}"></td>
+		  </tr>
+		  </tbody>
+	</table>
+
+</body>
+</html>
