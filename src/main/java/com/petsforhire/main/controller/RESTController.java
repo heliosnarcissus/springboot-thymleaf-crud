@@ -17,16 +17,15 @@ import com.petsforhire.main.service.UserService;
 
 
 @RestController
+//@RequestMapping("/api")
 public class RESTController {
 	
-	@Autowired
-	UserService userService;
-//	@RequestMapping(value = "/save", method = RequestMethod.POST)
-//	public String saveProduct(@ModelAttribute("user") User user) {
-//		userService.save(user);
-//		
-//		return "redirect:/";
-//	}
+
+	@GetMapping("/swag")
+	public String saveProduct(@ModelAttribute("user") User user) {
+		//userService.save(user);
+		return "swag";
+	}
 	
 //	@RequestMapping(value = "/save", method = RequestMethod.POST)
 //	public String saveProduct(@ModelAttribute("product") Product product) {
